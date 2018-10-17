@@ -5,7 +5,6 @@ function start(route, handle) {
   function onRequest(req, res) {
     let postData = ''
     const pathname = url.parse(req.url).pathname
-    console.log('request received for:' + pathname);
 
     route(handle, pathname, res, req)
   }
